@@ -10,9 +10,23 @@
     let masculino = [];
     let feminino = [];
 
-    for( item of listaDeNomes) {
-        if( listaDeNomes == feminino || masculino);
+    for(let sexo of listaDeNomes) {
+        alert(sexo);
+        let pergunta = prompt(`Informe o gênero usando (f) para feminino ou (m)para masculino`);
+        if( pergunta == "m"){
+            masculino.push(sexo);
+        }
+        else if( pergunta == "f"){
+            feminino.push(sexo);
+        }
+        else{
+            alert(`erro`);
+        }
+        
     }
+    alert(`${masculino.join(" , ")} : Homens`);
+    alert(`${feminino.join(" , ")} : Mulheres`);
+     
 
     //PROCESSAMENTO
 
